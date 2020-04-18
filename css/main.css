@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* estilos header */
+header{
+    border-top: solid 3px #FF6600;
+    background-color: #1E1E1E;
+    padding: 1em 2em;
+}
+/* estilos nav  */
+nav{
+    background-color: #FF6600;
+}
+#menu{
+    display: flex;
+    font-size: 1.0em;
+    text-transform: uppercase;
+}
+#menu li{
+    margin: 0 1em;
+    padding: 0.4em 1em;
+}
+#menu a{
+    color: white;
+}
+#menu li:hover{
+    background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 17%, rgba(71,71,71,1) 39%, rgba(17,17,17,1) 66%, rgba(19,19,19,1) 100%);
+}
+.current{
+    background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 17%, rgba(71,71,71,1) 39%, rgba(17,17,17,1) 66%, rgba(19,19,19,1) 100%); 
+}
+/* estilos main  */
+main{
+    margin-top: 2em;
+}
+main section:first-child{
+    display: flex;
+    justify-content: space-around;
+}
+main section:first-child>div{
+    width: 40%;
+}
+main section:first-child>div h2:first-child{
+    color: #FF6600;
+    text-transform: uppercase;
+}
+main section:first-child>div h2:last-child{
+    color:  rgba(110, 108, 108);
+    text-transform: uppercase;
+}
+/* ---- estilos bienvenido */
+#bienvenido{
+    padding-bottom: 2em;
+}
+#bienvenido>h2{
+    border-bottom: 2px solid rgba(110, 108, 108, 0.562);
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+}
+#bienvenido>p{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgba(110, 108, 108);
+    padding: 0.5em 0;
+}
+#bienvenido>p a{
+    text-decoration-line: underline;
+    color: #FF6600;
+}
+#pregunta{
+    display: flex;
+    margin: 0 auto;
+}
+#pregunta>p{
+    background-color: #F2F2F2;
+    font-size: 1.2em;
+    color: rgba(110, 108, 108);
+    padding: 0.3em 0;
+}
+#pregunta>p a{
+    text-decoration-line: underline;
+    color: #FF6600;
+}
+/* ---- estilos login */
+#login{
+}
+#login div:first-child{
+    display: flex;
+    text-transform: uppercase;
+    align-items: flex-end;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+}
+#login div:first-child h2:nth-child(2){
+    font-size: 1em;
+    margin-left: 1em;
+}
+#login-form{
+    background: rgba(237,237,237,1);
+    background: -moz-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,237,237,1)), color-stop(53%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 );
+    border: 2px solid rgba(110, 108, 108);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+fieldset{
+    border: none;
+}
+button{
+    background: none;
+    border: none;
+}
+label{
+    color: rgba(110, 108, 108);
+}
+input{
+    display: block;
+    width: 100%;
+    height: 2.2em;
+    background-color:rgb(218, 213, 213);
+}
+/* ---- estilos recomendados */
+section:nth-child(2){
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.container{
+    max-width: 15vw;
+}
+.container > p {
+    width: 100%;
+    background-color: #1e1e1e;
+    border: solid 2px #1e1e1e;
+    font-size:15px;
+    color: white;
+    display: block;
+}
+.container > img {
+    display: block;
+    width: 15vw;
+    border: solid 2px #1e1e1e;
+}
+/* ---- estilos footer */
+footer{
+    padding-top: 20px;
+    border-top: solid 1px #fb6404;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+footer > img:nth-child(3){
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+footer > div{
+    color: rgba(110, 108, 108);
+}
+.sucursal-nombre{
+    color: #fb6404;
+}

@@ -16,17 +16,20 @@
 	<link rel='apple-touch-icon' href=''>
 	<link rel='shortcut icon' sizes='196x196' href=''>
 	<title>PW2-GM</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<noscript>You need to enable JavaScript to run this app.</noscript>
+	<div id="container">
+
+	</div>
 	<header>
 		<img src="img/logoishidan.png" alt="Logo Ishidan sushi-comida oriental">
 	</header>
 	<nav>
-		<ul>
-			<li><a href="#"></a>inicio</li>
-			<li><a href="#"></a>menu</li>
-			<li><a href="#"></a>sucursales</li>
+		<ul id="menu">
+			<li class="current"><a href="#">inicio</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">sucursales</a></li>
 		</ul>
 	</nav>
 	<main>
@@ -34,19 +37,26 @@
 			<div id="bienvenido">
 				<h2>bienvenido</h2>
 				<p>Consulte nuestro <a href="">menú</a> o ingrese su usuario y contraseña para hacer su pedido online</p>
-				<div>
+				<div id="pregunta">
 					<img src="img/pregunta.png" alt="signo de pregunta">
 					<p>Si aún no se registró haga click <a href="">aquí</a> para iniciar su pedido</p>
 				</div>
 			</div>
 			<div id="login">
-				<h2>ingresar</h2>
-				<h2>delivery online</h2>
-				<form>
-					<label for="phone">Número de teléfono</label>
-					<input type="number" name="phone" id="phone">
-					<label for="pass">Contraseña</label>
-					<input type="password" name="pass" id="pass">
+				<div>
+					<h2>ingresar</h2>
+					<h2>delivery online</h2>
+				</div>
+				<form id="login-form">
+					<fieldset>
+						<label for="phone">Número de teléfono</label>
+						<input type="number" name="phone" id="phone">
+					</fieldset>
+					<fieldset>
+						<label for="pass">Contraseña</label>
+						<input type="password" name="pass" id="pass">
+					</fieldset>
+					
 					<button type="submit"><img src="img/boton.png" alt="boton en envio"></button>
 				</form>
 			</div>
